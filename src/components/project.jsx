@@ -2,10 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 
 // Import your video files
-import VID1 from "../assets/ProjectVideos/wanderlust.mp4";
-import VID2 from "../assets/ProjectVideos/bubbleGame.mp4";
-import VID3 from "../assets/ProjectVideos/ticTacToe.mp4";
-import VID4 from "../assets/ProjectVideos/simonSays.mp4";
+import VID1 from "../assets/Projects/wanderlust4.mp4";
+import VID2 from "../assets/Projects/bubbleGame1.mp4";
+import VID3 from "../assets/Projects/ticTacToe3.mp4";
+import VID4 from "../assets/Projects/simonSays1.mp4";
 
 function Project() {
   return (
