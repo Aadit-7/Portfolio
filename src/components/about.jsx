@@ -11,7 +11,7 @@ const about = () => {
       data-scroll-speed="-.1."
       data-scroll-section
       id="section_AboutMe"
-      className="bg-[#D0D9FF]  px-10 py-10 rounded-[2vw] text-black  "
+      className="bg-[#D0D9FF] px-10 py-10 rounded-[2vw] text-black "
     >
       <h1 className="text-[2.2vw] font-arvo font-medium leading-[2.7vw]">
         "As an entry-level MERN stack developer, my primary objective is to
@@ -43,7 +43,7 @@ const about = () => {
             </h1>
             <div className="py-10 pr-10 flex justify-end align-middle ">
               <motion.a
-                whileHover={{ background: "  black", color: "white" }}
+                whileHover={{ background: "  black", color: "white" }}
                 transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
                 href={PDF} // Path to your resume file in the public folder
                 download="resume.pdf" // Name for the downloaded file
@@ -56,7 +56,7 @@ const about = () => {
               </motion.a>
             </div>
           </div>
-          <div className="w-1/2 h-[35vw]  pl-20 pt-24 mt-10 rounded-3xl bg-[#D0D9FF] bg-cover overflow-hidden">
+          <div className="w-1/2 h-[35vw]  pl-20 pt-24 mt-10 rounded-3xl bg-[#D0D9FF] bg-cover overflow-hidden">
             <img
               className="-mt-24 -ml-10 border-[0.5px] rounded-3xl border-zinc-400 "
               src={IMG}

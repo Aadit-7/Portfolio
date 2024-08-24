@@ -1,13 +1,23 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { BiUnderline } from "react-icons/bi";
 
 function Navbar() {
   return (
-    <div className="fixed bg-[#D0D9FF] backdrop-blur-md  bg-opacity-10 z-[999] w-full px-12 py-5 border-b-[0.1px] border-b-zinc-300 flex justify-between items-center">
-      <div className="font-robotoCondensed text-[2vw] text-black">
+    <nav
+      className={`
+    // Large Screen 
+    fixed lg:bg-[#D0D9FF] lg:backdrop-blur-md lg:bg-opacity-10 lg:z-[999] lg:w-full lg:px-12 lg:py-5 lg:border-b-[0.1px] lg:border-b-zinc-300 lg:flex lg:justify-between lg:items-center
+
+    // Medium Screen
+    md:bg-white md:text-black md:flex md:justify-center md:items-center md:py-4
+
+    // Small Screen
+    sm:bg-white sm:text-black sm:flex sm:justify-center sm:items-center sm:py-4
+  `}
+    >
+      <span className="lg:font-robotoCondensed lg:text-[2vw]  lg:text-black md:text-blue-600">
         Personal Portfolio
-      </div>
+      </span>
       <div className="link font-robotoCondensed  font-semibold flex gap-10">
         <motion.a
           initial={{ opacity: 0 }}
@@ -15,7 +25,7 @@ function Navbar() {
           exit={{ opacity: 0 }}
           transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
           whileHover={{ borderBottom: "1px solid black" }}
-          className="text-[1.36vw] font-semibold text-black"
+          className="text-[1.36vw] font-semibold text-black "
           href=""
         >
           Home
@@ -54,7 +64,7 @@ function Navbar() {
           Contact Me
         </motion.a>
       </div>
-    </div>
+    </nav>
   );
 }
 
