@@ -65,12 +65,12 @@ function footer() {
       className="rounded-3xl bg-[#D0D9FF]"
     >
       <div className="h-full w-full rounded-3xl bg-[#7091E7] flex gap-10  ">
-        <div className="Form h-1/2 w-1/2 p-5 text-2xl font-semibold m-10">
+        <div className="Form h-1/2 w-1/2 p-5 text-[1.2vw] font-semibold m-10">
           <form
             onSubmit={onSubmit}
             className="text-black  border-black border-[1px] px-10 py-7 rounded-2xl"
           >
-            <h1 className="pl-56 text-4xl mb-10 font-light">Contact Form</h1>
+            <h1 className="pl-56 text-[2vw] mb-10 font-light">Contact Form</h1>
             <label htmlFor="name">Your Name :</label>
             <input
               id="name"
@@ -92,11 +92,12 @@ function footer() {
             <br />
             <br />
             <label htmlFor="message">Message :</label>
+            <br />
             <textarea
               name="message"
               id="message"
               rows={5}
-              cols={50}
+              cols={60}
               className="ml-1 mt-3 p-3 rounded-xl bg-[#D0D9FF] resize-none"
               required
             ></textarea>
@@ -112,7 +113,7 @@ function footer() {
           </form>
         </div>
         <div className="Social_Links h-1/2 w-1/2 p-5 text-xl  font-semibold m-10">
-          <h1 className="text-2xl font-semibold">
+          <h1 className="text-[1.2vw] font-semibold">
             You may connect with me on:
           </h1>
           <div className="links flex mt-10 flex-col gap-5 h-full text-[3vw]">
@@ -152,7 +153,7 @@ function footer() {
               <FaSquareInstagram />
             </motion.a>
           </div>
-          <h1 className="pt-40 tracking-wide  text-5xl">
+          <h1 className="pt-40 tracking-wide  text-[2.2vw]">
             Thanks For visiting!!
           </h1>
         </div>

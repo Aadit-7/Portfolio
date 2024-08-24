@@ -11,7 +11,7 @@ const about = () => {
       data-scroll-speed="-.1."
       data-scroll-section
       id="section_AboutMe"
-      className="bg-[#D0D9FF]  px-10 py-10 rounded-3xl text-black  "
+      className="bg-[#D0D9FF]  px-10 py-10 rounded-[2vw] text-black  "
     >
       <h1 className="text-[2.2vw] font-arvo font-medium leading-[2.7vw]">
         "As an entry-level MERN stack developer, my primary objective is to

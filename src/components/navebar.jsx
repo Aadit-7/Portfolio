@@ -5,7 +5,7 @@ import { BiUnderline } from "react-icons/bi";
 function Navbar() {
   return (
     <div className="fixed bg-[#D0D9FF] backdrop-blur-md  bg-opacity-10 z-[999] w-full px-12 py-5 border-b-[0.1px] border-b-zinc-300 flex justify-between items-center">
-      <div className="font-robotoCondensed text-4xl text-black">
+      <div className="font-robotoCondensed text-[2vw] text-black">
         Personal Portfolio
       </div>
       <div className="link font-robotoCondensed  font-semibold flex gap-10">
@@ -15,7 +15,7 @@ function Navbar() {
           exit={{ opacity: 0 }}
           transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
           whileHover={{ borderBottom: "1px solid black" }}
-          className="text-2xl font-semibold text-black"
+          className="text-[1.36vw] font-semibold text-black"
           href=""
         >
           Home
@@ -26,7 +26,7 @@ function Navbar() {
           exit={{ opacity: 0 }}
           transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
           whileHover={{ borderBottom: "1px solid black" }}
-          className="text-2xl font-semibold text-black"
+          className="text-[1.36vw] font-semibold text-black"
           href="#section_project"
         >
           My Work
@@ -37,7 +37,7 @@ function Navbar() {
           exit={{ opacity: 0 }}
           transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
           whileHover={{ borderBottom: "1px solid black" }}
-          className="text-2xl font-semibold text-black"
+          className="text-[1.36vw] font-semibold text-black"
           href="#section_AboutMe"
         >
           About Me
@@ -48,7 +48,7 @@ function Navbar() {
           exit={{ opacity: 0 }}
           transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
           whileHover={{ borderBottom: "1px solid black" }}
-          className="text-2xl font-semibold text-black ml-40"
+          className="text-[1.36vw] font-semibold text-black ml-40"
           href="#section_ContactMe"
         >
           Contact Me
