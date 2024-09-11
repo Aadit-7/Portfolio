@@ -4,16 +4,16 @@ import PDF from "../assets/PDF.pdf";
 import { motion } from "framer-motion";
 import { FaDownload } from "react-icons/fa";
 
-const about = () => {
+const About = () => {
   return (
     <div
       data-scroll
       data-scroll-speed="-.1."
       data-scroll-section
       id="section_AboutMe"
-      className="bg-[#D0D9FF] px-10 py-10 rounded-[2vw] text-black "
+      className="rounded-[2rem] bg-[#D0D9FF] px-4 py-10 text-black sm:px-8 lg:px-10"
     >
-      <h1 className="text-[2.2vw] font-arvo font-medium leading-[2.7vw]">
+      <h1 className="font-arvo font-medium sm:text-[1.8rem] sm:font-extralight sm:leading-[2rem] lg:text-[2.1rem] lg:leading-[2.4rem]">
         "As an entry-level MERN stack developer, my primary objective is to
         utilize my expertise in MongoDB, Express.js, React, and Node.js to craft
         dynamic, full-stack web applications. I am enthusiastic about applying
@@ -22,13 +22,13 @@ const about = () => {
         knowledge to adapt to new technologies within a rapidly evolving
         development environment."
       </h1>
-      <div className=" border-t-[1px] font-robotoCondensed border-zinc-600 mt-14">
-        <div className="w-full tracking-normal flex gap-10">
-          <div className="text-2xl pt-5 w-1/2">
-            <h1 className="text-[2.7vw] uppercase tracking-tighter font-semibold mt-7 mb-10">
+      <div className="mt-14 border-t-[1px] border-zinc-600 font-robotoCondensed">
+        <div className="flex w-full flex-col gap-10 tracking-normal lg:flex-row">
+          <div className="pt-5 text-xl sm:text-2xl lg:w-1/2">
+            <h1 className="mb-10 mt-7 text-[2rem] font-semibold uppercase tracking-tighter sm:text-[2.7rem]">
               about me :
             </h1>
-            <h1 className="text-[1.7vw] leading-[1.9vw]">
+            <h1 className="text-[1.4rem] leading-[1.7rem] sm:text-[1.7rem] sm:leading-[1.9rem]">
               Hello! I'm Aadit Suresh Yadav, <br /> a recent graduate with a
               strong interest in web development, particularly in the MERN
               stack. I recently completed a BE in Computer Science, where I
@@ -41,13 +41,13 @@ const about = () => {
               projects and growing as a developer in a collaborative
               environment.
             </h1>
-            <div className="py-10 pr-10 flex justify-end align-middle ">
+            <div className="flex justify-center py-10 pr-0 align-middle lg:justify-end lg:pr-10">
               <motion.a
-                whileHover={{ background: "  black", color: "white" }}
+                whileHover={{ background: "black", color: "white" }}
                 transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
                 href={PDF} // Path to your resume file in the public folder
                 download="resume.pdf" // Name for the downloaded file
-                className="px-4 flex align-middle justify-center gap-5 py-2 bg-[#3D52A1] text-white rounded-2xl"
+                className="flex justify-center gap-5 rounded-2xl bg-[#3D52A1] px-4 py-2 align-middle text-white"
               >
                 Download Resume
                 <div className="py-1">
@@ -56,18 +56,18 @@ const about = () => {
               </motion.a>
             </div>
           </div>
-          <div className="w-1/2 h-[35vw]  pl-20 pt-24 mt-10 rounded-3xl bg-[#D0D9FF] bg-cover overflow-hidden">
+          <div className="mt-10 h-[25rem] w-full overflow-hidden rounded-3xl bg-[#D0D9FF] bg-cover pl-0 pt-10 sm:h-[35rem] lg:w-1/2 lg:pl-20 lg:pt-24">
             <img
-              className="-mt-24 -ml-10 border-[0.5px] rounded-3xl border-zinc-400 "
+              className="rounded-3xl border-[0.5px] border-zinc-400"
               src={IMG}
-              alt=""
+              alt="Profile"
             />
           </div>
         </div>
       </div>
-      <div className="border-t-[1px] border-zinc-600 mt-16"></div>
+      <div className="mt-16 border-t-[1px] border-zinc-600"></div>
     </div>
   );
 };
 
-export default about;
+export default About;

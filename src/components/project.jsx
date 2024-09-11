@@ -14,19 +14,23 @@ function Project() {
       data-scroll-speed=".1"
       data-scroll-section
       id="section_project"
-      className="rounded-3xl bg-[#7091E7]"
+      className="rounded-3xl bg-[#7091E7] p-5 lg:p-10"
     >
-      <div className="flex gap-10 ">
-        <h1 className="text-[3vw] w-1/4 uppercase px-10 pt-10 p-5 leading-none tracking-tight">
+      {/* Title Section */}
+      <div className="flex flex-col gap-10 lg:flex-row">
+        <h1 className="w-full p-5 text-[2rem] uppercase leading-none tracking-tight sm:text-[3rem] lg:w-1/4">
           My work -
         </h1>
-        <marquee className="full pt-14 mr-10 text-[1vw] " direction="left">
-          Hover to see demo video...........
+        <marquee className="full mr-10 pt-3 text-[1rem] lg:pt-10">
+          Hover to see demo video...
         </marquee>
       </div>
-      <div className="flex flex-wrap text-white p-5 -mt-7 h-full w-full">
-        <div className="p-10  w-1/2 h-full">
-          <div className="border-[1px] overflow-hidden bg-[#3D52A1] rounded-3xl p-5 border-black ">
+
+      {/* Project List */}
+      <div className="-mt-7 flex flex-wrap justify-center lg:-mt-7">
+        {/* Project 1 */}
+        <div className="w-full p-5 md:w-1/2">
+          <div className="overflow-hidden rounded-3xl border-[1px] border-black bg-[#3D52A1] p-5">
             <motion.div
               initial={{ opacity: 0.5 }}
               whileHover={{ opacity: 1 }}
@@ -34,38 +38,40 @@ function Project() {
               className="relative"
             >
               <video
-                className="overflow-hidden rounded-3xl"
+                className="w-full overflow-hidden rounded-3xl"
                 src={VID1}
                 muted
                 loop
-                // Play video on hover
                 onMouseEnter={(e) => e.currentTarget.play()}
                 onMouseLeave={(e) => e.currentTarget.pause()}
               />
             </motion.div>
             <br />
-            <span className=" flex justify-between rounded-full">
-              <h1 className="text-[2vw]">Wanderlust Clone</h1>
+            <span className="flex items-center justify-between">
+              <h1 className="text-[1.5rem] sm:text-[2rem]">Wanderlust Clone</h1>
               <motion.a
-                whileHover={{ background: "  black", color: "white" }}
+                whileHover={{ background: "black", color: "white" }}
                 transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
-                className="mr-1 text-[1.2vw] text-black bg-[#D0D9FF] rounded-3xl p-3 px-5"
+                className="rounded-3xl px-4 py-2 text-[1rem] text-black sm:bg-[#3D52A1] sm:text-[1.2rem] md:px-5 md:py-3 md:text-[1.5rem] lg:bg-[#D0D9FF]"
                 href=""
               >
-                {" "}
                 Source Code
               </motion.a>
             </span>
             <div className="flex">
-              <h1 className="text-[1.2vw] ">Technologies used : &nbsp;</h1>
-              <h1 className="text-[1.2vw] uppercase ">
-                Express-Js, Node-Js, Mongodb, JAVASCRIPT
+              <h1 className="text-[1rem] sm:text-[1rem] lg:text-[1.2rem]">
+                Technologies used : &nbsp;
+              </h1>
+              <h1 className="text-[1rem] sm:text-[1.2rem] lg:uppercase">
+                Express, Node, MongoDB
               </h1>
             </div>
           </div>
         </div>
-        <div className="p-10 w-1/2 h-full">
-          <div className="border-[1px] overflow-hidden bg-[#3D52A1] rounded-3xl p-5 border-black">
+
+        {/* Project 2 */}
+        <div className="w-full p-5 md:w-1/2">
+          <div className="overflow-hidden rounded-3xl border-[1px] border-black bg-[#3D52A1] p-5">
             <motion.div
               initial={{ opacity: 0.5 }}
               whileHover={{ opacity: 1 }}
@@ -73,7 +79,7 @@ function Project() {
               className="relative"
             >
               <video
-                className="overflow-hidden rounded-3xl"
+                className="w-full overflow-hidden rounded-3xl"
                 src={VID2}
                 muted
                 loop
@@ -82,25 +88,31 @@ function Project() {
               />
             </motion.div>
             <br />
-            <span className=" flex justify-between rounded-full">
-              <h1 className="text-[2vw]">Bubble Game</h1>
+            <span className="flex items-center justify-between">
+              <h1 className="text-[1.5rem] sm:text-[2rem]">Bubble Game</h1>
               <motion.a
-                whileHover={{ background: "  black", color: "white" }}
+                whileHover={{ background: "black", color: "white" }}
                 transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
-                className="mr-1 text-[1.2vw] text-black bg-[#D0D9FF] rounded-3xl p-3 px-5"
+                className="rounded-3xl px-4 py-2 text-[1rem] text-black sm:bg-[#3D52A1] sm:text-[1.2rem] md:px-5 md:py-3 md:text-[1.5rem] lg:bg-[#D0D9FF]"
                 href="https://github.com/Aadit-7/Bubble-Game"
               >
                 Source Code
               </motion.a>
             </span>
             <div className="flex">
-              <h1 className="text-[1.2vw] ">Technologies used : &nbsp;</h1>
-              <h1 className="text-[1.2vw] "> HTML, CSS, JAVASCRIPT</h1>
+              <h1 className="text-[1rem] sm:text-[1.2rem]">
+                Technologies used : &nbsp;
+              </h1>
+              <h1 className="text-[1rem] sm:text-[1.2rem]">
+                HTML, CSS, JavaScript
+              </h1>
             </div>
           </div>
         </div>
-        <div className="p-10 w-1/2 h-full">
-          <div className="border-[1px] overflow-hidden bg-[#3D52A1] rounded-3xl p-5 border-black">
+
+        {/* Project 3 */}
+        <div className="w-full p-5 md:w-1/2">
+          <div className="overflow-hidden rounded-3xl border-[1px] border-black bg-[#3D52A1] p-5">
             <motion.div
               initial={{ opacity: 0.5 }}
               whileHover={{ opacity: 1 }}
@@ -108,7 +120,7 @@ function Project() {
               className="relative"
             >
               <video
-                className="overflow-hidden rounded-3xl"
+                className="w-full overflow-hidden rounded-3xl"
                 src={VID3}
                 muted
                 loop
@@ -117,25 +129,31 @@ function Project() {
               />
             </motion.div>
             <br />
-            <span className=" flex justify-between rounded-full">
-              <h1 className="text-[2vw]">Tic-Tac-Toe</h1>
+            <span className="flex items-center justify-between">
+              <h1 className="text-[1.5rem] sm:text-[2rem]">Tic-Tac-Toe</h1>
               <motion.a
-                whileHover={{ background: "  black", color: "white" }}
+                whileHover={{ background: "black", color: "white" }}
                 transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
-                className="mr-1 text-[1.2vw] text-black bg-[#D0D9FF] rounded-3xl p-3 px-5"
+                className="rounded-3xl px-4 py-2 text-[1rem] text-black sm:bg-[#3D52A1] sm:text-[1.2rem] md:px-5 md:py-3 md:text-[1.5rem] lg:bg-[#D0D9FF]"
                 href="https://github.com/Aadit-7/Tic-Tic-Toe"
               >
                 Source Code
               </motion.a>
             </span>
             <div className="flex">
-              <h1 className="text-[1.2vw] ">Technologies used : &nbsp; </h1>
-              <h1 className="text-[1.2vw]">HTML, CSS, JAVASCRIPT</h1>
+              <h1 className="text-[1rem] sm:text-[1.2rem]">
+                Technologies used : &nbsp;
+              </h1>
+              <h1 className="text-[1rem] sm:text-[1.2rem]">
+                HTML, CSS, JavaScript
+              </h1>
             </div>
           </div>
         </div>
-        <div className="p-10 w-1/2 h-full">
-          <div className="border-[1px] overflow-hidden bg-[#3D52A1] rounded-3xl p-5 border-black">
+
+        {/* Project 4 */}
+        <div className="w-full p-5 md:w-1/2">
+          <div className="overflow-hidden rounded-3xl border-[1px] border-black bg-[#3D52A1] p-5">
             <motion.div
               initial={{ opacity: 0.5 }}
               whileHover={{ opacity: 1 }}
@@ -143,7 +161,7 @@ function Project() {
               className="relative"
             >
               <video
-                className="overflow-hidden rounded-3xl"
+                className="w-full overflow-hidden rounded-3xl"
                 src={VID4}
                 muted
                 loop
@@ -152,20 +170,24 @@ function Project() {
               />
             </motion.div>
             <br />
-            <span className=" flex justify-between rounded-full">
-              <h1 className="text-[2vw]">Simon Says Game</h1>
+            <span className="flex items-center justify-between">
+              <h1 className="text-[1.5rem] sm:text-[2rem]">Simon Says Game</h1>
               <motion.a
-                whileHover={{ background: "  black", color: "white" }}
+                whileHover={{ background: "black", color: "white" }}
                 transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
-                className="mr-1 text-[1.2vw] text-black bg-[#D0D9FF] rounded-3xl p-3 px-5"
+                className="rounded-3xl px-4 py-2 text-[1rem] text-black sm:bg-[#3D52A1] sm:text-[1.2rem] md:px-5 md:py-3 md:text-[1.5rem] lg:bg-[#D0D9FF]"
                 href="https://github.com/Aadit-7/Simon-Says-game"
               >
                 Source Code
               </motion.a>
             </span>
             <div className="flex">
-              <h1 className="text-[1.2vw] ">Technologies used : &nbsp;</h1>
-              <h1 className="text-[1.2vw] "> HTML, CSS, JAVASCRIPT</h1>
+              <h1 className="text-[1rem] sm:text-[1.2rem]">
+                Technologies used : &nbsp;
+              </h1>
+              <h1 className="text-[1rem] sm:text-[1.2rem]">
+                HTML, CSS, JavaScript
+              </h1>
             </div>
           </div>
         </div>

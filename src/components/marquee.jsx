@@ -6,38 +6,40 @@ import { BiLogoMongodb } from "react-icons/bi";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 import { TbBrandRedux } from "react-icons/tb";
+
 function Marquee() {
   return (
     <div
       data-scroll
       data-scroll-speed="-.01"
       data-scroll-section
-      className="bg-[#7091E7] rounded-3xl mb-10  py-[4vw] w-full overflow-hidden"
+      className="mb-10 w-full overflow-hidden rounded-3xl bg-[#7091E7] py-[2rem] md:py-[4rem]"
     >
-      <div className="flex text-zinc-800  items-center space-x-10 uppercase text border-t-2 border-b-2 border-zinc-300 whitespace-nowrap  overflow-hidden pt-10 pb-9 font-medium">
+      <div className="flex items-center space-x-10 overflow-hidden whitespace-nowrap border-b-2 border-t-2 border-zinc-300 pb-6 pt-6 font-medium uppercase text-zinc-800 md:pb-9 md:pt-10">
         <motion.div
-          className="flex gap-20 text- space-x-10"
+          className="flex gap-10 md:gap-20"
           initial={{ x: 0 }}
           animate={{ x: "-70%" }}
           transition={{ ease: "linear", repeat: Infinity, duration: 5 }}
         >
-          <FaHtml5 className="text-[17vw]" />
-          <FaCss3Alt className="text-[17vw]" />
-          <IoLogoJavascript className="text-[17vw]" />
-          <IoLogoReact className="text-[17vw]" />
-          <FaNode className="text-[17vw]" />
-          <SiExpress className="text-[17vw]" />
-          <BiLogoMongodb className="text-[17vw]" />
-          <SiMysql className="text-[17vw]" />
-          <FaBootstrap className="text-[17vw]" />
-          <RiTailwindCssFill className="text-[17vw]" />
-          <TbBrandRedux className="text-[17vw]" />
-          {/* Repeate */}
-          <FaHtml5 className="text-[17vw]" />
-          <FaCss3Alt className="text-[17vw]" />
-          <IoLogoJavascript className="text-[17vw]" />
-          <IoLogoReact className="text-[17vw]" />
-          <FaNode className="text-[17vw]" />
+          {/* Icons with responsive sizes */}
+          <FaHtml5 className="text-[4rem] sm:text-[7rem] md:text-[10rem] lg:text-[14rem] xl:text-[17rem]" />
+          <FaCss3Alt className="text-[4rem] sm:text-[7rem] md:text-[10rem] lg:text-[14rem] xl:text-[17rem]" />
+          <IoLogoJavascript className="text-[4rem] sm:text-[7rem] md:text-[10rem] lg:text-[14rem] xl:text-[17rem]" />
+          <IoLogoReact className="text-[4rem] sm:text-[7rem] md:text-[10rem] lg:text-[14rem] xl:text-[17rem]" />
+          <FaNode className="text-[4rem] sm:text-[7rem] md:text-[10rem] lg:text-[14rem] xl:text-[17rem]" />
+          <SiExpress className="text-[4rem] sm:text-[7rem] md:text-[10rem] lg:text-[14rem] xl:text-[17rem]" />
+          <BiLogoMongodb className="text-[4rem] sm:text-[7rem] md:text-[10rem] lg:text-[14rem] xl:text-[17rem]" />
+          <SiMysql className="text-[4rem] sm:text-[7rem] md:text-[10rem] lg:text-[14rem] xl:text-[17rem]" />
+          <FaBootstrap className="text-[4rem] sm:text-[7rem] md:text-[10rem] lg:text-[14rem] xl:text-[17rem]" />
+          <RiTailwindCssFill className="text-[4rem] sm:text-[7rem] md:text-[10rem] lg:text-[14rem] xl:text-[17rem]" />
+          <TbBrandRedux className="text-[4rem] sm:text-[7rem] md:text-[10rem] lg:text-[14rem] xl:text-[17rem]" />
+          {/* Repeated Icons */}
+          <FaHtml5 className="text-[4rem] sm:text-[7rem] md:text-[10rem] lg:text-[14rem] xl:text-[17rem]" />
+          <FaCss3Alt className="text-[4rem] sm:text-[7rem] md:text-[10rem] lg:text-[14rem] xl:text-[17rem]" />
+          <IoLogoJavascript className="text-[4rem] sm:text-[7rem] md:text-[10rem] lg:text-[14rem] xl:text-[17rem]" />
+          <IoLogoReact className="text-[4rem] sm:text-[7rem] md:text-[10rem] lg:text-[14rem] xl:text-[17rem]" />
+          <FaNode className="text-[4rem] sm:text-[7rem] md:text-[10rem] lg:text-[14rem] xl:text-[17rem]" />
         </motion.div>
       </div>
     </div>

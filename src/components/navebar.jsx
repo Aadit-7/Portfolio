@@ -1,84 +1,139 @@
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa"; // Importing hamburger and close icons
 
 function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage mobile menu visibility
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav
-      className={`
-    // Large Screen 
-    fixed lg:bg-[#D0D9FF] lg:backdrop-blur-md lg:bg-opacity-10 lg:z-[999] lg:w-full lg:px-12 lg:py-5 lg:border-b-[0.1px] lg:border-b-zinc-300 lg:flex lg:justify-between lg:items-center
-
-    // Medium Screen
-    md:bg-white md:text-black md:flex md:justify-center md:items-center md:py-4
-
-    // Small Screen
-    sm:bg-white sm:text-black sm:flex sm:justify-center sm:items-center sm:py-4
-  `}
+      className={`fixed top-0 z-[999] w-full bg-white sm:bg-[#7091E7] lg:border-b-[0.1px] lg:border-b-zinc-300 lg:bg-opacity-10 lg:px-12 lg:py-5 lg:backdrop-blur-md`}
     >
-      <span className="lg:font-robotoCondensed lg:text-[2vw]  lg:text-black md:text-blue-600">
-        Personal Portfolio
-      </span>
-      <div className="link font-robotoCondensed  font-semibold flex gap-10">
-        <motion.a
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
-          whileHover={{ borderBottom: "1px solid black" }}
-          className="text-[1.36vw] font-semibold text-black "
-          href=""
-        >
-          Home
-        </motion.a>
-        <motion.a
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
-          whileHover={{ borderBottom: "1px solid black" }}
-          className="text-[1.36vw] font-semibold text-black"
-          href="#section_project"
-        >
-          My Work
-        </motion.a>
-        <motion.a
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
-          whileHover={{ borderBottom: "1px solid black" }}
-          className="text-[1.36vw] font-semibold text-black"
-          href="#section_AboutMe"
-        >
-          About Me
-        </motion.a>
-        <motion.a
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
-          whileHover={{ borderBottom: "1px solid black" }}
-          className="text-[1.36vw] font-semibold text-black ml-40"
-          href="#section_ContactMe"
-        >
-          Contact Me
-        </motion.a>
+      <div className="flex w-full items-center justify-between px-4 py-4 sm:px-8 lg:px-12">
+        {/* Logo / Branding */}
+        <span className="text-lg font-bold text-black sm:text-xl md:text-2xl lg:font-robotoCondensed lg:text-[2rem]">
+          Personal Portfolio
+        </span>
+
+        {/* Hamburger Menu Button */}
+        <div className="lg:hidden">
+          <button
+            onClick={toggleMenu}
+            className="text-2xl text-black focus:outline-none"
+          >
+            {isMenuOpen ? <FaTimes /> : <FaBars />}{" "}
+            {/* Toggle between hamburger and close icons */}
+          </button>
+        </div>
+
+        {/* Navigation Links - Hidden on small screens and visible on large screens */}
+        <div className="hidden font-robotoCondensed font-semibold lg:flex lg:gap-10">
+          <motion.a
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
+            whileHover={{ borderBottom: "1px solid black" }}
+            className="text-base font-semibold text-black lg:text-[1.36rem]"
+            href="#"
+          >
+            Home
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
+            whileHover={{ borderBottom: "1px solid black" }}
+            className="text-base font-semibold text-black lg:text-[1.36rem]"
+            href="#section_project"
+          >
+            My Work
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
+            whileHover={{ borderBottom: "1px solid black" }}
+            className="text-base font-semibold text-black lg:text-[1.36rem]"
+            href="#section_AboutMe"
+          >
+            About Me
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
+            whileHover={{ borderBottom: "1px solid black" }}
+            className="text-base font-semibold text-black lg:text-[1.36rem]"
+            href="#section_ContactMe"
+          >
+            Contact Me
+          </motion.a>
+        </div>
       </div>
+
+      {/* Mobile Menu - Displayed on small screens when the menu button is clicked */}
+      {isMenuOpen && (
+        <div className="flex w-full flex-col items-start bg-[#7091E7] px-4 py-4 font-robotoCondensed font-semibold lg:hidden">
+          <motion.a
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
+            whileHover={{ borderBottom: "1px solid black" }}
+            className="mb-2 w-full text-base"
+            href="#"
+            onClick={toggleMenu}
+          >
+            Home
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
+            whileHover={{ borderBottom: "1px solid black" }}
+            className="mb-2 w-full text-base"
+            href="#section_project"
+            onClick={toggleMenu}
+          >
+            My Work
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
+            whileHover={{ borderBottom: "1px solid black" }}
+            className="mb-2 w-full text-base"
+            href="#section_AboutMe"
+            onClick={toggleMenu}
+          >
+            About Me
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
+            whileHover={{ borderBottom: "1px solid black" }}
+            className="mb-2 w-full text-base"
+            href="#section_ContactMe"
+            onClick={toggleMenu}
+          >
+            Contact Me
+          </motion.a>
+        </div>
+      )}
     </nav>
   );
 }
 
 export default Navbar;
-
-{
-  /* {["Services", "My Work", "About ME", "Insights", "Contact ME"].map(
-  (item, idx) => (
-    <a
-      key={idx}
-      className={`text-xl font-light ${idx === 4 && "ml-40"}`}
-    >
-      {item}
-    </a>
-  )
-  )} */
-}

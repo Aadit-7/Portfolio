@@ -6,7 +6,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoLogoGithub } from "react-icons/io";
 import Swal from "sweetalert2";
 
-function footer() {
+function Footer() {
   const onSubmit = async (event) => {
     event.preventDefault();
     const form = event.target;
@@ -62,65 +62,65 @@ function footer() {
       data-scroll-speed="-.1.4"
       data-scroll-section
       id="section_ContactMe"
-      className="rounded-3xl bg-[#D0D9FF]"
+      className="rounded-3xl bg-[#D0D9FF] p-4 sm:p-8 lg:p-12"
     >
-      <div className="h-full w-full rounded-3xl bg-[#7091E7] flex gap-10  ">
-        <div className="Form h-1/2 w-1/2 p-5 text-[1.2vw] font-semibold m-10">
+      <div className="flex flex-col gap-10 rounded-3xl bg-[#7091E7] lg:flex-row">
+        <div className="Form w-full p-5 text-[1.2rem] font-semibold lg:w-1/2">
           <form
             onSubmit={onSubmit}
-            className="text-black  border-black border-[1px] px-10 py-7 rounded-2xl"
+            className="bg-[#7091E7] px-6 py-5 text-black"
           >
-            <h1 className="pl-56 text-[2vw] mb-10 font-light">Contact Form</h1>
-            <label htmlFor="name">Your Name :</label>
+            <h1 className="mb-6 text-center text-[1.5rem] font-light sm:text-left">
+              Contact Form
+            </h1>
+            <label htmlFor="name" className="block">
+              Your Name :
+            </label>
             <input
               id="name"
               type="text"
-              name="name "
-              className="ml-3 p-3 mt-3 w-[25vw] rounded-xl bg-[#D0D9FF]"
+              name="name"
+              className="mb-4 mt-2 block w-full rounded-xl bg-[#D0D9FF] p-3"
               required
             />
-            <br />
-            <br />
-            <label htmlFor="email">Your Email :</label>
+            <label htmlFor="email" className="block">
+              Your Email :
+            </label>
             <input
               id="email"
               type="text"
-              name="email "
-              className="ml-3 p-3 mt-3 w-[25vw] rounded-xl bg-[#D0D9FF]"
+              name="email"
+              className="mb-4 mt-2 block w-full rounded-xl bg-[#D0D9FF] p-3"
               required
             />
-            <br />
-            <br />
-            <label htmlFor="message">Message :</label>
-            <br />
+            <label htmlFor="message" className="block">
+              Message :
+            </label>
             <textarea
               name="message"
               id="message"
               rows={5}
-              cols={60}
-              className="ml-1 mt-3 p-3 rounded-xl bg-[#D0D9FF] resize-none"
+              className="mb-4 mt-2 block w-full resize-none rounded-xl bg-[#D0D9FF] p-3"
               required
             ></textarea>
-            <br />
-            <br />
             <motion.button
-              whileHover={{ background: "  black", color: "white" }}
+              whileHover={{ background: "black", color: "white" }}
               transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
-              className="bg-[#D0D9FF]  p-3 w-32 rounded-full"
+              className="w-full rounded-full bg-[#D0D9FF] p-3 text-center sm:mt-2 sm:w-full md:w-full lg:mt-7 lg:w-full"
             >
               Send
             </motion.button>
           </form>
         </div>
-        <div className="Social_Links h-1/2 w-1/2 p-5 text-xl  font-semibold m-10">
-          <h1 className="text-[1.2vw] font-semibold">
+        <div className="Social_Links w-full p-5 text-xl font-semibold lg:w-1/2">
+          <h1 className="mb-6 text-[1.2rem] font-semibold">
             You may connect with me on:
           </h1>
-          <div className="links flex mt-10 flex-col gap-5 h-full text-[3vw]">
+          <div className="links flex flex-wrap justify-center gap-4 text-[2rem] sm:px-10 lg:justify-start lg:text-[3rem]">
             <motion.a
-              whileHover={{ background: "  #7091E7", color: "white" }}
+              whileHover={{ background: "#7091E7", color: "white" }}
               transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
-              className="bg-[#7091E7] w-[3vw]"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-[#7091E7]"
               href="https://www.linkedin.com/in/aadit-yadav-331b5317b/?trk=opento_sprofile_details"
             >
               <FaLinkedin />
@@ -129,38 +129,37 @@ function footer() {
             <motion.a
               whileHover={{ background: "#7091E7", color: "white" }}
               transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
-              className="bg-[#7091E7] rounded-full w-[3vw]"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-[#7091E7]"
               href="https://github.com/Aadit-7"
             >
               <IoLogoGithub />
             </motion.a>
 
             <motion.a
-              whileHover={{ background: "  #7091E7", color: "white" }}
+              whileHover={{ background: "#7091E7", color: "white" }}
               transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
-              className="bg-[#7091E7]  w-[3vw]"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-[#7091E7]"
               href="https://x.com/AaditAadit07"
             >
               <FaSquareXTwitter />
             </motion.a>
 
             <motion.a
-              whileHover={{ background: "  #7091E7", color: "white" }}
+              whileHover={{ background: "#7091E7", color: "white" }}
               transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
-              className="bg-[#7091E7]  w-[3vw]"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-[#7091E7]"
               href="https://www.instagram.com/_aadit_07/?hl=en"
             >
               <FaSquareInstagram />
             </motion.a>
           </div>
-          <h1 className="pt-40 tracking-wide  text-[2.2vw]">
-            Thanks For visiting!!
+          <h1 className="pt-10 text-center text-[1.8rem] tracking-wide lg:mt-96 lg:text-[2.2rem]">
+            Thanks For Visiting!!
           </h1>
         </div>
       </div>
-      <div className="  ml-20 mr-20 h-[1vw]"></div>
     </div>
   );
 }
 
-export default footer;
+export default Footer;
