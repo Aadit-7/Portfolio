@@ -11,7 +11,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 z-[999] w-full bg-white sm:bg-[#7091E7] lg:border-b-[0.1px] lg:border-b-zinc-300 lg:bg-opacity-10 lg:px-12 lg:py-5 lg:backdrop-blur-md`}
+      className={`fixed top-0 z-[999] w-full bg-[#7091E7] sm:bg-[#7091E7] sm:bg-opacity-10 sm:backdrop-blur-md lg:border-b-[0.1px] lg:border-b-zinc-300 lg:bg-opacity-10 lg:px-12 lg:py-5 lg:backdrop-blur-md`}
     >
       <div className="flex w-full items-center justify-between px-4 py-4 sm:px-8 lg:px-12">
         {/* Logo / Branding */}

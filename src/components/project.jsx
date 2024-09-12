@@ -1,13 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-// Import your video files
-import VID1 from "../assets/Projects/wanderlust4.mp4";
-import VID2 from "../assets/Projects/bubbleGame1.mp4";
-import VID3 from "../assets/Projects/ticTacToe3.mp4";
-import VID4 from "../assets/Projects/simonSays1.mp4";
-
 function Project() {
+  const VID1 =
+    "https://res.cloudinary.com/dp6gkldq8/video/upload/v1726124112/wanderlust4_cmn0yw.mp4";
+  const VID2 =
+    "https://res.cloudinary.com/dp6gkldq8/video/upload/v1726124125/bubbleGame1_ypn5cp.mp4";
+  const VID3 =
+    "https://res.cloudinary.com/dp6gkldq8/video/upload/v1726124102/ticTacToe3_zsj1nh.mp4";
+  const VID4 =
+    "https://res.cloudinary.com/dp6gkldq8/video/upload/v1726124099/simonSays1_bqgwqk.mp4";
+
   return (
     <div
       data-scroll
@@ -21,7 +24,7 @@ function Project() {
         <h1 className="w-full p-5 text-[2rem] uppercase leading-none tracking-tight sm:text-[3rem] lg:w-1/4">
           My work -
         </h1>
-        <marquee className="full mr-10 pt-3 text-[1rem] lg:pt-10">
+        <marquee className="full mr-10 hidden pt-3 text-[1rem] sm:block lg:pt-10">
           Hover to see demo video...
         </marquee>
       </div>
