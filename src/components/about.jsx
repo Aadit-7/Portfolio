@@ -56,12 +56,8 @@ const About = () => {
               </motion.a>
             </div>
           </div>
-          <div className="mt-10 h-[25rem] w-full overflow-hidden rounded-3xl bg-[#D0D9FF] bg-cover pl-0 pt-10 sm:h-[35rem] lg:w-1/2 lg:pl-20 lg:pt-24">
-            <img
-              className="rounded-3xl border-[0.5px] border-zinc-400"
-              src={IMG}
-              alt="Profile"
-            />
+          <div className="mt-10 h-[25rem] w-full overflow-hidden rounded-3xl border border-black bg-[#D0D9FF] bg-cover pl-0 pt-10 sm:h-[35rem] lg:w-1/2 lg:pl-10 lg:pt-0">
+            <img className="rounded-3xl" src={IMG} alt="Profile" />
           </div>
         </div>
       </div>
