@@ -22,6 +22,7 @@ function Marquee() {
           animate={{ x: "-70%" }}
           transition={{ ease: "linear", repeat: Infinity, duration: 5 }}
         >
+          {/* Icons with responsive sizes */}
           <FaHtml5 className="text-[4rem] sm:text-[7rem] md:text-[10rem] lg:text-[14rem] xl:text-[17rem]" />
           <FaCss3Alt className="text-[4rem] sm:text-[7rem] md:text-[10rem] lg:text-[14rem] xl:text-[17rem]" />
           <IoLogoJavascript className="text-[4rem] sm:text-[7rem] md:text-[10rem] lg:text-[14rem] xl:text-[17rem]" />

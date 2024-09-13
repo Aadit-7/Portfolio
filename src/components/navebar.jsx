@@ -74,7 +74,8 @@ function Navbar() {
           </motion.a>
         </div>
       </div>
-      /* Mobile Menu Displayed */
+
+      {/* Mobile Menu - Displayed on small screens when the menu button is clicked */}
       {isMenuOpen && (
         <div className="flex w-full flex-col items-start bg-[#7091E7] px-4 py-4 font-robotoCondensed font-semibold lg:hidden">
           <motion.a

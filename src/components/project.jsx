@@ -19,7 +19,7 @@ function Project() {
       id="section_project"
       className="rounded-3xl bg-[#7091E7] p-5 lg:p-10"
     >
-      /* Title Section */
+      {/* Title Section */}
       <div className="flex flex-col gap-10 lg:flex-row">
         <h1 className="w-full p-5 text-[2rem] uppercase leading-none tracking-tight sm:text-[3rem] lg:w-1/4">
           My work -
@@ -28,7 +28,8 @@ function Project() {
           Hover to see demo video...
         </marquee>
       </div>
-      /* Projects List *
+
+      {/* Project List */}
       <div className="-mt-7 flex flex-wrap justify-center lg:-mt-7">
         {/* Project 1 */}
         <div className="w-full p-5 md:w-1/2">
