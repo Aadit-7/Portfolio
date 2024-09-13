@@ -58,7 +58,7 @@ function Project() {
                 whileHover={{ background: "black", color: "white" }}
                 transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
                 className="rounded-3xl px-4 py-2 text-[1rem] text-black sm:bg-[#3D52A1] sm:text-[1.2rem] md:px-5 md:py-3 md:text-[1.5rem] lg:bg-[#D0D9FF]"
-                href=""
+                href="https://github.com/Aadit-7/Wanderlust"
               >
                 Source Code
               </motion.a>
