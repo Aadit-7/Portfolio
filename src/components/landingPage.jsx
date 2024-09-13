@@ -11,15 +11,13 @@ function LandingPage() {
       data-scroll-section
       className="h-screen w-full bg-[#D0D9FF] pt-4 font-robotoCondensed sm:pt-8 lg:pt-12"
     >
-      {/* Text Section */}
+      /* Text Section */
       <div className="textStructure mt-12 px-4 uppercase tracking-tighter sm:mt-24 sm:px-10 lg:px-20">
         <motion.div className="masker text-[4rem] font-semibold leading-[4.5rem] tracking-tighter sm:text-[6rem] sm:leading-[6.5rem] lg:text-[7rem] lg:leading-[8rem]">
           <p>Hey There,</p>
         </motion.div>
-
-        {/* Flex Container for Image and Name */}
+        /* Flex Container for Image and Name */
         <div className="masker flex flex-col items-start text-left text-[4rem] font-semibold leading-[4.5rem] tracking-tighter sm:flex-row sm:text-[6rem] sm:leading-[6.5rem] lg:flex-row lg:items-center lg:gap-4 lg:text-[7rem] lg:leading-[8rem]">
-          {/* Image stays visible on all screen sizes */}
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: "9rem" }}
@@ -34,8 +32,6 @@ function LandingPage() {
           </motion.div>
           <p className="mt-4 sm:ml-10 sm:mt-4 lg:ml-1 lg:mt-0">I am AADIT</p>
         </div>
-
-        {/* Developer and Fresher Section */}
         <div className="masker text-left text-[4rem] font-semibold leading-[4.5rem] tracking-tight sm:text-[6rem] sm:leading-[6.5rem] lg:text-[7rem] lg:leading-[8rem]">
           <p>MERN Developer</p>
         </div>
@@ -43,8 +39,6 @@ function LandingPage() {
           <p>fresher</p>
         </div>
       </div>
-
-      {/* Footer Section */}
       <div className="mt-8 flex flex-col justify-between border-t-[1px] border-zinc-600 px-4 py-3 align-middle font-roboto text-[0.9rem] sm:mt-16 sm:flex-row sm:px-8 sm:text-[1.1rem] lg:mt-20 lg:px-10">
         <div className="flex flex-col space-y-2 sm:flex-row sm:space-x-8 sm:space-y-0">
           <p>For Development use only</p>

@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa"; // Importing hamburger and close icons
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage mobile menu visibility
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -14,23 +14,19 @@ function Navbar() {
       className={`fixed top-0 z-[999] w-full bg-[#7091E7] sm:bg-[#7091E7] sm:bg-opacity-10 sm:backdrop-blur-md lg:border-b-[0.1px] lg:border-b-zinc-300 lg:bg-opacity-10 lg:px-12 lg:py-5 lg:backdrop-blur-md`}
     >
       <div className="flex w-full items-center justify-between px-4 py-4 sm:px-8 lg:px-12">
-        {/* Logo / Branding */}
         <span className="text-lg font-bold text-black sm:text-xl md:text-2xl lg:font-robotoCondensed lg:text-[2rem]">
           Personal Portfolio
         </span>
 
-        {/* Hamburger Menu Button */}
         <div className="lg:hidden">
           <button
             onClick={toggleMenu}
             className="text-2xl text-black focus:outline-none"
           >
             {isMenuOpen ? <FaTimes /> : <FaBars />}{" "}
-            {/* Toggle between hamburger and close icons */}
           </button>
         </div>
 
-        {/* Navigation Links - Hidden on small screens and visible on large screens */}
         <div className="hidden font-robotoCondensed font-semibold lg:flex lg:gap-10">
           <motion.a
             initial={{ opacity: 0 }}
@@ -78,8 +74,7 @@ function Navbar() {
           </motion.a>
         </div>
       </div>
-
-      {/* Mobile Menu - Displayed on small screens when the menu button is clicked */}
+      /* Mobile Menu Displayed */
       {isMenuOpen && (
         <div className="flex w-full flex-col items-start bg-[#7091E7] px-4 py-4 font-robotoCondensed font-semibold lg:hidden">
           <motion.a

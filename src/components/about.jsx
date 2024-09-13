@@ -45,8 +45,8 @@ const About = () => {
               <motion.a
                 whileHover={{ background: "black", color: "white" }}
                 transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
-                href={PDF} // Path to your resume file in the public folder
-                download="resume.pdf" // Name for the downloaded file
+                href={PDF}
+                download="resume.pdf"
                 className="flex justify-center gap-5 rounded-2xl bg-[#3D52A1] px-4 py-2 align-middle text-white"
               >
                 Download Resume
