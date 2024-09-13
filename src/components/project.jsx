@@ -41,7 +41,7 @@ function Project() {
               className="relative"
             >
               <video
-                className="w-full overflow-hidden rounded-3xl"
+                className="w-full overflow-hidden sm:rounded-none lg:rounded-3xl"
                 src={VID1}
                 muted
                 loop
@@ -51,7 +51,9 @@ function Project() {
             </motion.div>
             <br />
             <span className="flex items-center justify-between">
-              <h1 className="text-[1.5rem] sm:text-[2rem]">Wanderlust Clone</h1>
+              <h1 className="text-[1.5rem] underline sm:text-[2rem]">
+                Wanderlust Clone
+              </h1>
               <motion.a
                 whileHover={{ background: "black", color: "white" }}
                 transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
@@ -82,7 +84,7 @@ function Project() {
               className="relative"
             >
               <video
-                className="w-full overflow-hidden rounded-3xl"
+                className="w-full overflow-hidden sm:rounded-none lg:rounded-3xl"
                 src={VID2}
                 muted
                 loop
@@ -92,7 +94,9 @@ function Project() {
             </motion.div>
             <br />
             <span className="flex items-center justify-between">
-              <h1 className="text-[1.5rem] sm:text-[2rem]">Bubble Game</h1>
+              <h1 className="text-[1.5rem] underline sm:text-[2rem]">
+                Bubble Game
+              </h1>
               <motion.a
                 whileHover={{ background: "black", color: "white" }}
                 transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
@@ -123,7 +127,7 @@ function Project() {
               className="relative"
             >
               <video
-                className="w-full overflow-hidden rounded-3xl"
+                className="w-full overflow-hidden sm:rounded-none lg:rounded-3xl"
                 src={VID3}
                 muted
                 loop
@@ -133,7 +137,9 @@ function Project() {
             </motion.div>
             <br />
             <span className="flex items-center justify-between">
-              <h1 className="text-[1.5rem] sm:text-[2rem]">Tic-Tac-Toe</h1>
+              <h1 className="text-[1.5rem] underline sm:text-[2rem]">
+                Tic-Tac-Toe
+              </h1>
               <motion.a
                 whileHover={{ background: "black", color: "white" }}
                 transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
@@ -164,7 +170,7 @@ function Project() {
               className="relative"
             >
               <video
-                className="w-full overflow-hidden rounded-3xl"
+                className="w-full overflow-hidden sm:rounded-none lg:rounded-3xl"
                 src={VID4}
                 muted
                 loop
@@ -174,7 +180,9 @@ function Project() {
             </motion.div>
             <br />
             <span className="flex items-center justify-between">
-              <h1 className="text-[1.5rem] sm:text-[2rem]">Simon Says Game</h1>
+              <h1 className="text-[1.5rem] underline sm:text-[2rem]">
+                Simon Says Game
+              </h1>
               <motion.a
                 whileHover={{ background: "black", color: "white" }}
                 transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
