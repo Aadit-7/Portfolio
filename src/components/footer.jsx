@@ -70,7 +70,7 @@ function Footer() {
             onSubmit={onSubmit}
             className="bg-[#7091E7] px-6 py-5 text-black"
           >
-            <h1 className="mb-6 text-center text-[1.5rem] font-light sm:text-left">
+            <h1 className="mb-6 text-center font-robotoCondensed text-[2rem] sm:text-left">
               Contact Form
             </h1>
             <label htmlFor="name" className="block">
@@ -113,7 +113,7 @@ function Footer() {
           </form>
         </div>
         <div className="Social_Links w-full p-5 text-xl font-semibold lg:w-1/2">
-          <h1 className="mb-6 text-[1.2rem] font-semibold">
+          <h1 className="mb-6 px-8 py-5 text-[2rem] font-semibold">
             You may connect with me on:
           </h1>
           <div className="links flex flex-wrap justify-center gap-4 text-[2rem] sm:px-10 lg:justify-start lg:text-[3rem]">
