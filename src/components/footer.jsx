@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
-import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoLogoGithub } from "react-icons/io";
 import Swal from "sweetalert2";
-import { FaSquareXTwitter } from "react-icons/fa6";
+
 function Footer() {
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -122,6 +121,7 @@ function Footer() {
               transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
               className="flex h-10 w-10 items-center justify-center rounded-full bg-[#7091E7]"
               href="https://www.linkedin.com/in/aadit-yadav-331b5317b/?trk=opento_sprofile_details"
+              target="_blank"
             >
               <FaLinkedin />
             </motion.a>
@@ -131,6 +131,7 @@ function Footer() {
               transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
               className="flex h-10 w-10 items-center justify-center rounded-full bg-[#7091E7]"
               href="https://github.com/Aadit-7"
+              target="_blank"
             >
               <IoLogoGithub />
             </motion.a>
@@ -140,6 +141,7 @@ function Footer() {
               transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
               className="flex h-10 w-10 items-center justify-center rounded-full bg-[#7091E7]"
               href="https://x.com/AaditAadit07"
+              target="_blank"
             >
               <FaSquareXTwitter />
             </motion.a>
@@ -149,6 +151,7 @@ function Footer() {
               transition={{ ease: [0.33, 1, 0.68, 1], duration: 0.5 }}
               className="flex h-10 w-10 items-center justify-center rounded-full bg-[#7091E7]"
               href="https://www.instagram.com/_aadit_07/?hl=en"
+              target="_blank"
             >
               <FaSquareInstagram />
             </motion.a>

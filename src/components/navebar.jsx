@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -81,6 +80,7 @@ function Navbar() {
             whileHover={{ borderBottom: "1px solid black" }}
             className="text-base font-semibold text-black lg:text-[1.36rem]"
             href="https://portfolio-2-0-red-two.vercel.app/"
+            target="_blank"
           >
             New Version
           </motion.a>
