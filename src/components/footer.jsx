@@ -5,7 +5,7 @@ import { FaSquareInstagram } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoLogoGithub } from "react-icons/io";
 import Swal from "sweetalert2";
-
+import { FaSquareXTwitter } from "react-icons/fa6";
 function Footer() {
   const onSubmit = async (event) => {
     event.preventDefault();
